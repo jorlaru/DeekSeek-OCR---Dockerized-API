@@ -10,7 +10,7 @@ services:
     environment:
       - CUDA_VISIBLE_DEVICES=0
       - MODEL_PATH=/app/models/deepseek-ai/DeepSeek-OCR  # Update with your model path
-      - MAX_CONCURRENCY=5  # Adjust based on your GPU memory
+      - MAX_CONCURRENCY=1  # Adjust based on your GPU memory
       - GPU_MEMORY_UTILIZATION=0.85  # Adjust based on your GPU memory
     deploy:
       resources:
